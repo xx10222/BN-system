@@ -38,7 +38,7 @@ header li {margin-bottom: 10px;}
 .main_content .main_div .main .main_test:hover {animation-play-state: paused; transform: scale(1.06,1.06); filter: brightness(95%); transition-duration:0.3s;}
 .main_content .main_div .main {display: flex; justify-content: center;}
 .main_content .main_div .main .main_test{margin-right: 30px; margin-bottom: 94px; animation-name: jump; animation-duration: 1s; animation-iteration-count: infinite; font-family: Jua; font-size: 37px;}
-.main_content .main_div .main .main_test:last-child{margin-right: 0px;}
+.main_content .main_div .main .main_test:last-child{margin-right: 0px; animation-delay: 0.4s;}
 
 .container .bn_first {color: #434040;font-size: 75px;font-family: Jua;top: 14%;position: absolute;transform: translate(-50%, -50%);left: 50%;width: 100%;}
 @keyframes jump {
@@ -49,12 +49,6 @@ header li {margin-bottom: 10px;}
 @keyframes up{
   100%{margin-top: 50px;}
 }
-
-/* @keyframes mini_jump {
-  0% {margin-top: 0px;}
-	50% {margin-top: 5px;}
-  100% {margin-top: 0px;}
-} */
 
 .mb { margin-bottom: 53px !important;}
 .all_test {width: 100%; height: 100%; background-color: none; margin-top:86px; margin-bottom: 86px; position: relative;} 
@@ -72,24 +66,24 @@ ul.test li:last-child a img  {margin-right: 0px;}
 .all_test .new .back_square{width: 1316px; height: 130px; position: relative; z-index: -1; background-color: #F9F9C6; background-size: cover; margin: 0 auto; margin-top: -100px; }
 
 .all_test .recommend{ width: 1320px; border: 3px solid #E1F9C6;   margin: 0 auto;}
-.all_test .recommend .logo {width: 240px; height: 44px; margin-left: 40px; margin-top: 15px; margin-bottom: 5px; margin-top: 30px;}
+.all_test .recommend .logo {width: 240px; height: 44px; margin-left: 40px; margin-top: 15px; margin-bottom: 15px; margin-top: 30px;}
 .all_test .recommend .test {display: flex; justify-content: center;}
 .all_test .recommend .back_square{width: 1316px; height: 130px; position: relative; z-index: -1; background-color: #E1F9C6; background-size: cover; margin: 0 auto; margin-top: -100px; }
 
 .all_test .hot{ width: 1320px; border: 3px solid #F6CCF8;  margin: 0 auto;}
-.all_test .hot .logo {width: 240px; height: 42px; margin-left: 40px; margin-top: 15px; margin-bottom: 5px; margin-top: 30px;}
+.all_test .hot .logo {width: 240px; height: 42px; margin-left: 40px; margin-top: 15px; margin-bottom: 15px; margin-top: 30px;}
 .all_test .hot .test {display: flex; justify-content: center;}
 .all_test .hot .back_square{width: 1316px; height: 130px; position: relative; z-index: -1; background-color: #F6CCF8; background-size: cover; margin: 0 auto; margin-top: -100px; } 
 
-footer{width: 100%; height: 450px; position: relative; margin: 0 auto; background-image : url(../img/36_1.png); background-repeat: no-repeat; background-blend-mode: darken; background-position: center;}
-footer .foot{font: normal normal normal 28px/30px Jua; margin-top: 420px; position: absolute; width: 100%;}
+footer{width: 100%; height: 497px; position: relative; margin: 0 auto; background-image : url(../img/footer.png); background-repeat: no-repeat; background-blend-mode: darken; background-position: center;}
+footer .foot{position: absolute; font: normal normal normal 28px/30px Jua; margin-top: 400px; position: absolute; width: 100%;}
 footer .foot span{margin-top: 100px;}
-footer .foot .left{ margin-left: 16%; width: 300px;}
-footer .foot .rightr{margin-left: 43%; color: red;}
-footer .foot .rightb{color: black;}
+footer .foot .left{position: absolute; margin-left: 16%; width: 300px;}
+footer .foot .rightr{position: absolute; margin-left: 75%; margin-top: 3.5%; color: red;}
+/* footer .foot .rightb{position: absolute; color: black;} */
 
 @media (max-width: 1440px){ /* PC 중간 크기 */
-  ul.test li a img {width: 250px; height: 150px;}
+  ul.test li a img {width: 250px; height: 160px;}
   .all_test .title{font: normal normal normal 19px/24px Jua; width: 250px; height: 50px; text-align: center; background-color: black; 
     color: white; margin-top: -50px; position:absolute; z-index: 1; line-height: 60px;}
   
@@ -97,9 +91,9 @@ footer .foot .rightb{color: black;}
   /* 테스트 별 로고 크기 */
   /* .main_content .main_div span {margin-right: 600px;} */
   .main_content .main_div span img {width: 230px; height: 45px;}
-  .all_test .new .logo {width:210px; height:38px; margin-left: 40px; margin-top: 15px; margin-bottom: 12px; margin-top: 30px;}
-  .all_test .recommend .logo {width: 210px; height: 38px; margin-left: 40px; margin-top: 15px; margin-bottom: 5px; margin-top: 30px;}
-  .all_test .hot .logo {width: 210px; height: 38px; margin-left: 40px; margin-top: 15px; margin-bottom: 5px; margin-top: 30px;}
+  .all_test .new .logo {width:210px; height:38px; margin-left: 40px; margin-top: 15px; margin-bottom: 10px; margin-top: 20px;}
+  .all_test .recommend .logo {width: 210px; height: 38px; margin-left: 40px; margin-top: 15px; margin-bottom: 10px; margin-top: 20px;}
+  .all_test .hot .logo {width: 210px; height: 38px; margin-left: 40px; margin-top: 15px; margin-bottom: 10px; margin-top: 20px;}
 
   /* 테스트 사진 크기 조정 */
   .main_content .main_div ul.main .main_test img{width: 420px; height: 248px;}
@@ -115,7 +109,7 @@ footer .foot .rightb{color: black;}
   .all_test .hot .back_square{max-width: 1100px; width: 100%; height: 90px; margin-top: -62px;}
 
   footer .foot .left{ margin-left: 8%;}
-  footer .foot .rightr{margin-left: 43%;}
+  /* footer .foot .rightr{margin-left: 43%;} */
 }
 
 @media (max-width: 1160px){ /* 테스트 2개로 바뀌는 지점 */
@@ -123,22 +117,30 @@ footer .foot .rightb{color: black;}
   .all_test .new .back_square{display: none;}
   .all_test .recommend .back_square{display: none;}
   .all_test .hot .back_square{display: none;}
+
   /* 아이템 2개씩 배치*/
   .all_test .new{width: 700px;}
-  .all_test .new .test{flex-wrap: wrap;}
-  .all_test .recommend{width: 700px;}
-  .all_test .recommend .test{flex-wrap: wrap;}
   .all_test .hot{width: 700px;}
+  .all_test .recommend{width: 700px;}
+
+  .all_test .new .test{flex-wrap: wrap;}
+  .all_test .recommend .test{flex-wrap: wrap;}
   .all_test .hot .test{flex-wrap: wrap;}
-  ul.test li a img{margin: 0 auto;}
-  .all_test .new ul.test li {padding: 25px; padding-left: 30px; padding-right: 30px;}
+
+  .all_test .new ul.test li {padding-bottom: 30px; padding-left: 30px; padding-right: 30px;}
   .all_test .recommend ul.test li {padding: 25px; padding-left: 30px; padding-right: 30px;}
   .all_test .hot ul.test li {padding: 25px; padding-left: 30px; padding-right: 30px;}
+
   .all_test .new .logo {width: 185px; height: 35px;}
   .all_test .recommend .logo {width: 185px; height: 35px;}
   .all_test .hot .logo {width: 185px; height: 35px;}
 
+  .all_test .title{width: 260px;}
+
+  ul.test li a img{width: 260px; height: 160px; margin: 0 auto;}
+
   footer .foot{font-size: 23px;}
+  footer .foot .rightr{margin-top: 5%;}
 }
 
 @keyframes lefting {
@@ -159,16 +161,17 @@ footer .foot .rightb{color: black;}
   .content_subtt{font-size: 5vw;}
   .main_content .main_div .main .main_test{margin-right: 0; margin-bottom: 22px; animation-play-state: paused; /*animation-name: lefting;*/ }
   /* .main_content .main_div .main .main_test:last-child{animation-name: righting;} */
-  .main_content .main_div ul.main .main_test img{max-width:455px;  width: calc(100% - 198px); min-width: 238px; height: inherit; }
+  .main_content .main_div ul.main .main_test img{max-width:455px;  width: calc(100% - 198px); min-width: 320px; height: inherit; }
   .main_content .main_div span img {max-width: 238px; height:inherit; width: 100%; margin-top: 18px; margin-bottom: 18px;}
-  footer .foot{font-size: 2.5vw;}
+  footer .foot{font-size: 3vw;}
+  footer .foot .rightr{margin-top: 7%;}
 }
 
 @media (max-width: 755px){ /* 모바일 크기 */
   .container{height: 500px;}
   .container .bn_first {font-size: 9vw;}
 
-  .content_subtt{font-size: 6vw;}
+  .content_subtt{font-size: 5.5vw;}
 
   header .nav .random{width: 122px;height: 35px;position: absolute;top: 30px;margin-right: 10%;right: 0;}
   header .logo_area {margin-left: -1%;}
@@ -190,14 +193,21 @@ footer .foot .rightb{color: black;}
   .all_test .hot{max-width: 350px; min-width: 320px; width: calc(100% - 39px); margin: 0 auto; position: relative; text-align: center;}
   .all_test .hot .test{flex-wrap: wrap;}
   .all_test .hot .logo{margin-left: 0;}
+
+  footer .foot .rightr{margin-top: 9.5%;}
+}
+
+@media (max-width:600px){
+  footer .foot {font-size: 4vw;}
 }
 
 @media (max-width:450px){ /* 핸드폰 로고 위치만 조정 */
-  header .logo_area {margin-left: -10%;}
+  header .logo_area {margin-left: -10%; top: 18px;}
+  header .logo_area a img{max-width: 40px;}
 
-  footer .foot{font-size: 3.5vw;}
-  footer .foot .left {margin-left: 9%;}
-  footer .foot .rightr{margin-left: 26%;}
+  footer .foot{font-size: 4.5vw;}
+  footer .foot .left {width: auto; margin-left: 9%;}
+  footer .foot .rightr{margin-left: 70%; margin-top: 15%;}
 
 }
 
@@ -217,6 +227,10 @@ footer .foot .rightb{color: black;}
   .all_test .title { font-size: 17px; width: 200px; height: 50px; margin-top: -53px;}
 
   ul.test li a img {width: 200px; height: 150px;}
+
+  footer .foot{font-size: 5vw;}
+  footer .foot .rightr{margin-top: 20%;}
+ 
 }
 
 
