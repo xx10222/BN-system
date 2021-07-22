@@ -19,19 +19,21 @@ li {display: list-item;}
 
 /* header{position: absolute; top: 0; left: 0; width: 100%; margin: 0 auto; height: 60px; text-align: center; z-index:1; background-color: white;} */
 header{position: relative; top: 0; left: 0; max-width: 1920px; width: 100%; margin: 0 auto; height: 60px; text-align: center; z-index:1; background-color: white;}
-header .logo_area {position: absolute; width: 200px; height: 50px; float: left; padding: 0px; margin-left: 10%; margin-bottom: 5px; top: 13px;}
+header div{background-color: white;}
+header .logo_area {position: absolute; width: 200px; height: 50px; float: left; padding: 0px; margin-left: 10%; margin-bottom: 5px; top: 13px; background-color: whtie;}
 header .logo_area a img{position: absolute; max-width: 200px; width: calc(100% - 148px); position: absolute;}
-header .nav {float: right; width: 250px; height: 70px; margin-right: 10%;}
-header .nav .random {width: 200px; height: 35px; position: absolute; top: 38px;}
-header li {margin-bottom: 10px;}
+header .nav {float: right; width: 250px; height: 70px; margin-right: 10%; background-color: white;}
+header .nav .random {width: 200px; height: 35px; position: absolute; top: 25px;}
+header .nav .random a img {max-width: 200px; min-width: 120px; width: calc(100% - 35px);}
+header li {margin-bottom: 10px; background-color: white;}
 
-.container {position: relative;margin: 0 auto;top: 25px;background-image: url(../img/banner.png);background-repeat: no-repeat; -moz-background-size: cover; -o-background-size: cover;background-position: center;width: 100%;height: 775px;backdrop-filter: blur(5px);text-align: center;}
+.container {position: relative;margin: 0 auto;top: 25px;background-image: url(../img/banner.png);background-repeat: no-repeat; -moz-background-size: cover; -o-background-size: cover;background-position: center; width: 100%;height: 775px;backdrop-filter: blur(5px);text-align: center;}
 .container .bn_first{color: #434040;margin-top: 210px; font-size: 5vw; font-family: Jua;}
 .container .bn_first .rr {color: red;}
 .container .bn_first .bb {color: black;}
 .container .bn_first .other {color: #434040;}
 
-.main_content {height: 510px; width: 100%; background-color: #FCEEEA; margin-top: 25px;}
+.main_content {position: relative; height: 510px; max-width: 1920px; width: 100%; background-color: #FCEEEA; margin:0 auto; margin-top: 25px;}
 .main_content .main_div{text-align: center; width: calc(100% - 100px); margin: 0 auto;}
 .main_content .main_div span img {width: 288px; height: 57px; margin-top: 18px; margin-bottom: 18px;}
 .main_content .main_div ul.main .main_test img{max-width:526px; width:100%;text-align: center; box-shadow: 8px 10px 10px grey;}
@@ -46,9 +48,6 @@ header li {margin-bottom: 10px;}
 	50% {margin-top: 13px;}
   100% {margin-top: 0px;}
 }
-@keyframes up{
-  100%{margin-top: 50px;}
-}
 
 .mb { margin-bottom: 53px !important;}
 .all_test {width: 100%; height: 100%; background-color: none; margin-top:86px; margin-bottom: 86px; position: relative;} 
@@ -58,7 +57,8 @@ header li {margin-bottom: 10px;}
 ul.test li a img {border: 0px solid black; border-radius: 10px; width: 300px; height: 200px; margin:0 auto; margin-right: 20px; box-shadow: 5px 10px 7px grey;}
 ul.test li:last-child a img  {margin-right: 0px;}
 
-.all_test ul li:hover {transform: scale(1.03,1.03); filter: brightness(90%); transition-duration:0.3s;}
+.all_test ul li:hover {transform: scale(1.03,1.03); transition-duration:0.3s;}
+.all_test ul li:hover img{filter: brightness(90%); }
 
 .all_test .new {width: 1320px;  border: 3px solid #F9F9C6; margin: 0 auto;}
 .all_test .new .logo {width:240px; height:44px; margin-left: 40px; margin-top: 15px; margin-bottom: 15px; margin-top: 30px;}
@@ -75,7 +75,7 @@ ul.test li:last-child a img  {margin-right: 0px;}
 .all_test .hot .test {display: flex; justify-content: center;}
 .all_test .hot .back_square{width: 1316px; height: 130px; position: relative; z-index: -1; background-color: #F6CCF8; background-size: cover; margin: 0 auto; margin-top: -100px; } 
 
-footer{width: 100%; height: 497px; position: relative; margin: 0 auto; background-image : url(../img/footer.png); background-repeat: no-repeat; background-blend-mode: darken; background-position: center;}
+footer{width: 100%; max-width: 1920px; height: 497px; position: relative; margin: 0 auto; background-image : url(../img/footer.png); background-repeat: no-repeat; background-blend-mode: darken; background-position: center;}
 footer .foot{position: absolute; font: normal normal normal 28px/30px Jua; margin-top: 400px; position: absolute; width: 100%;}
 footer .foot span{margin-top: 100px;}
 footer .foot .left{position: absolute; margin-left: 16%; width: 300px;}
@@ -113,6 +113,10 @@ footer .foot .rightr{position: absolute; margin-left: 75%; margin-top: 3.5%; col
 }
 
 @media (max-width: 1160px){ /* 테스트 2개로 바뀌는 지점 */
+
+  header .logo_area{margin-left: 6%;}
+  header .nav{margin-right: 6%;}
+
   /*뒷 배경에 네모칸 삭제*/
   .all_test .new .back_square{display: none;}
   .all_test .recommend .back_square{display: none;}
@@ -127,9 +131,9 @@ footer .foot .rightr{position: absolute; margin-left: 75%; margin-top: 3.5%; col
   .all_test .recommend .test{flex-wrap: wrap;}
   .all_test .hot .test{flex-wrap: wrap;}
 
-  .all_test .new ul.test li {padding-bottom: 30px; padding-left: 30px; padding-right: 30px;}
-  .all_test .recommend ul.test li {padding: 25px; padding-left: 30px; padding-right: 30px;}
-  .all_test .hot ul.test li {padding: 25px; padding-left: 30px; padding-right: 30px;}
+  .all_test .new ul.test li {padding-top:5px;  padding-bottom: 30px; padding-left: 30px; padding-right: 30px;}
+  .all_test .recommend ul.test li {padding-top:5px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;}
+  .all_test .hot ul.test li {padding-top:5px; padding-bottom: 30px; padding-left: 30px; padding-right: 30px;}
 
   .all_test .new .logo {width: 185px; height: 35px;}
   .all_test .recommend .logo {width: 185px; height: 35px;}
@@ -190,7 +194,7 @@ footer .foot .rightr{position: absolute; margin-left: 75%; margin-top: 3.5%; col
   .all_test .recommend{max-width: 350px; width: calc(100% - 39px); margin: 0 auto; position: relative; text-align: center;}
   .all_test .recommend .test{flex-wrap: wrap;}
   .all_test .recommend .logo{ margin-left: 0;}
-  .all_test .hot{max-width: 350px; min-width: 320px; width: calc(100% - 39px); margin: 0 auto; position: relative; text-align: center;}
+  .all_test .hot{max-width: 350px; width: calc(100% - 39px); margin: 0 auto; position: relative; text-align: center;}
   .all_test .hot .test{flex-wrap: wrap;}
   .all_test .hot .logo{margin-left: 0;}
 
@@ -204,11 +208,26 @@ footer .foot .rightr{position: absolute; margin-left: 75%; margin-top: 3.5%; col
 @media (max-width:450px){ /* 핸드폰 로고 위치만 조정 */
   header .logo_area {margin-left: -10%; top: 18px;}
   header .logo_area a img{max-width: 40px;}
+  header .nav .random a img{min-width: 100px;}
+  header .nav{width: 200px; height: 50px;}
+
+  .main_content .main_div ul.main .main_test img{min-width: 270px;}
 
   footer .foot{font-size: 4.5vw;}
   footer .foot .left {width: auto; margin-left: 9%;}
   footer .foot .rightr{margin-left: 70%; margin-top: 15%;}
 
+}
+
+@media (max-width:385px){
+
+  .main_content .main_div ul.main .main_test img{min-width: 200px; width: calc(100% - 15px);}
+  .all_test .new{width: calc(100% - 60px);}
+  .all_test .recommend{width: calc(100% - 60px);}
+  .all_test .hot{width: calc(100% - 60px);}
+  .all_test .title{width: 220px;}
+
+  ul.test li a img{width: 220px; height: 135px;}
 }
 
 @media (max-width:310px){
@@ -218,19 +237,40 @@ footer .foot .rightr{position: absolute; margin-left: 75%; margin-top: 3.5%; col
   header .nav .random a img {max-width: 107px; width: calc(100% - 20px);}
   header .nav .random{top: 34px; margin-right: 4%;}
 
-  .main_content .main_div ul.main .main_test img{min-width: 200px;}
+  .main_content .main_div ul.main .main_test img{min-width: 155px;}
 
-  .all_test .new {min-width: 265px;}
-  .all_test .recommend {min-width: 265px;}
-  .all_test .hot {min-width: 265px;}
+  .all_test .new {min-width: 250px;}
+  .all_test .recommend {min-width: 250px;}
+  .all_test .hot {min-width: 250px;}
   .all_test .new .logo {max-width: 185px; width: calc(100% - 44px);}
-  .all_test .title { font-size: 17px; width: 200px; height: 50px; margin-top: -53px;}
+  .all_test .title { font-size: 17px; width: 200px; height: 45px; }
 
-  ul.test li a img {width: 200px; height: 150px;}
+  ul.test li a img {width: 200px; height: 135px;}
 
   footer .foot{font-size: 5vw;}
   footer .foot .rightr{margin-top: 20%;}
  
 }
 
+@media (max-width:285px){
+  header{height: 45px;}
+  header .nav .random{top: 28px;}
+  header .logo_area{margin-left: -20%;}
+  header .logo_area a img{max-width: 30px; top: 13px;}
+  header .nav .random a img{min-width: 95px;}
 
+  .container{height: 470px;}
+  .container .bn_first{top: 4%;}
+  ul.test li a img{width: 170px; height: 115px;}
+
+  /* .main_content .main_div ul.main .main_test img{min-width: 160px;} */
+  .content_subtt{font-size: 6vw;}
+
+  .all_test .title{font-size: 14px; width: 170px; height: 43px; margin-top: -37px;}
+  .all_test .new {min-width: 210px;}
+  .all_test .new .logo{max-width: 180px; width: calc(100% - 61px); min-height: 20px; height: calc(100% - 10px);}
+  .all_test .recommend {min-width: 210px;}
+  .all_test .recommend .logo{max-width: 180px; width: calc(100% - 61px); min-height: 20px; height: calc(100% - 10px);}
+  .all_test .hot {min-width: 210px;}
+  .all_test .hot .logo{max-width: 180px; width: calc(100% - 61px); min-height: 20px; height: calc(100% - 10px);}
+}
